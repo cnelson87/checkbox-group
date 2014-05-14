@@ -1,0 +1,212 @@
+body {
+	color: #333;
+	font-size: 14px;
+	font-family: Arial, Verdana, sans-serif;
+	line-height: 20px;
+	background: #ccc;
+	margin: 0;
+	padding: 0;
+}
+p, dl, ol, ul, table, fieldset {
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+dt, dd, li, th, td {
+	margin: 0;
+	padding: 0;			
+}
+a {
+	text-decoration: none;
+}
+
+.clear {clear: both;}
+
+#content {
+	width: 800px;
+	background: #fff;
+	margin: 0 auto;
+	padding: 40px;
+}
+
+#validationSummary {
+	display: none;
+	border: 2px solid #333;
+	padding: 8px 16px;
+	margin: 0 0 20px 0;
+	
+}
+#validationSummary.valid {
+	display: block;
+}
+#validationSummary.invalid {
+	display: block;
+	color: #c00;
+	border-color: #c00;
+}
+	#validationSummary h3 {
+		margin: 0 0 4px 0;
+	}
+	#validationSummary ul {
+		margin: 0 0 0 2em;
+	}
+	#validationSummary p {
+		margin: 0;
+	}
+
+fieldset {
+	border: 0;
+}
+
+	fieldset span.formnote {
+		/* text after form field */
+		display: inline-block;
+		font-size: 11px;
+		font-style: italic;
+		margin-left: 1em;
+	}
+
+	fieldset.text-fields ol,
+	fieldset.text-fields ol > li {
+		list-style: none;
+		margin-bottom: 8px;
+	}
+	fieldset.text-fields label {
+		display: inline-block;
+		width: 120px;
+		font-weight: bold;
+	}
+	fieldset.text-fields label.block {
+		display: block;
+		width: auto;
+		margin-bottom: 4px;
+	}
+	fieldset.text-fields label + textarea {
+		vertical-align: top;
+	}
+
+	fieldset.cb-rb-fields ol,
+	fieldset.cb-rb-fields ol > li {
+		list-style: none;
+		margin-bottom: 8px;
+	}
+	fieldset.cb-rb-fields.inline ol > li {
+		float: left;
+		width: 25%;
+	}
+
+
+input, select, textarea, button {
+	color: #333;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 12px;
+	line-height: 1.2;
+	background: #fff;
+	border: 2px solid #aaa;
+	border-right-color: #888;
+	border-bottom-color: #888;
+	border-radius: 0;
+	margin: 0;
+	padding: 2px;
+}
+select {
+	padding: 1px;
+}
+input:invalid,
+select:invalid,
+textarea:invalid {
+	box-shadow: none;
+	outline: 0;
+}
+input:focus,
+select:focus,
+textarea:focus {
+	border-color: #111;
+	box-shadow: none;
+	outline: 0;
+}
+input.invalid,
+select.invalid,
+textarea.invalid {
+	border-color: #c00;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+/*input[type=number],
+input[type=tel],*/
+input[type=url] {
+	width: 200px;
+}
+input[type=number],
+input[type=tel] {
+	width: 80px;
+}
+
+select {
+	width: auto;
+	min-width: 88px;
+	max-width: 208px;
+}
+
+textarea {
+	width: 200px;
+	height: 3.6em; /* x3 line-height */
+	resize: none;
+}
+
+input[type=checkbox],
+input[type=radio] {
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+}
+
+input[type=range] {
+	width: 200px;
+	cursor: pointer;
+}
+
+input[type=submit],
+input[type=reset],
+input[type=button],
+button {
+	cursor: pointer;
+	font-weight: bold;
+	background: #ddd;
+	padding: 2px 16px;
+}
+
+h2.toggle.checked:after {content: " ✓";}
+
+span.cb-state {
+	display: inline-block;
+	padding: 0 5px;
+	background: #efefef;
+}
+	span.cb-state label {
+		display: inline-block;
+		opacity: 0.5;
+		width: 16px;
+		text-align: center;
+	}
+	span.cb-state input[type=radio].y + label {
+		color: blue;
+	}
+	span.cb-state input[type=radio].n + label {
+		color: red;
+	}
+	span.cb-state input[type=radio]:checked + label {
+		opacity: 1.0;
+		font-weight: bold;
+	}
+	span.cb-state input {
+		display: none;
+	}
+
+.template {
+	display: none;
+}
+

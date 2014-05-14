@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<title>Checkbox Group</title>
+
+	<link rel="stylesheet" href="assets/styles/styles.css" />
+
+	<script src="assets/scripts/vendor/modernizr.custom.min.js"></script>
+	<script src="assets/scripts/vendor/jquery.min.js"></script>
+	<script src="assets/scripts/vendor/mustache.js"></script>
+	<script src="assets/scripts/vendor/underscore.min.js"></script>
+	<script src="assets/scripts/vendor/backbone.min.js"></script>
+	<script src="assets/scripts/shims/classList.js"></script>
+	<script src="assets/scripts/views/checkbox-group.js"></script>
+
+	<script>
+		// var App = Backbone.View.extend({
+		// 	initialize: function(){
+		// 		var $select = this.$el.find('select');
+		// 		this.customSelect = new CustomSelect({select: $select});
+		// 		this.listenTo(this.customSelect, 'CustomSelect:selectChanged', this.onSelectChanged);
+		// 	},
+		// 	//render: function(){},
+		// 	onSelectChanged: function(data){
+		// 		console.log('onSelectChanged', data);
+		// 	}
+		// });
+		// $(document).on('CustomSelect:selectChanged', function(e, data){
+		// 	console.log('CustomSelect', data);
+		// });
+		// $(function(){
+		// 	var $el = $('#customselect-form');
+		// 	var app = new App({el: $el});
+		// });
+	</script>
+
+</head>
+<body>
+
+	<div id="content">
+
+		<h1>Checkbox Group</h1>
+
+		<fieldset id="checkbox-group-form" class="cb-rb-fields inline">
+			<h2 class="toggle">
+				<input type="checkbox" value="0" id="toggleEventTypes" />
+				<label for="toggleEventTypes">Event Types</label>
+			</h2>
+			<ol class="radio-check-fields">
+				<li>
+					<input type="checkbox" value="open" id="open" />
+					<label for="open">Open</label>
+				</li>
+				<li>
+					<input type="checkbox" value="click" id="click" />
+					<label for="click">Click</label>
+				</li>
+				<li>
+					<input type="checkbox" value="opt-out" id="opt-out" />
+					<label for="opt-out">Opt Out</label>
+				</li>
+				<li>
+					<input type="checkbox" value="hard-bounce" id="hard-bounce" />
+					<label for="hard-bounce">Hard Bounce</label>
+				</li>
+				<li>
+					<input type="checkbox" value="soft-bounce" id="soft-bounce" />
+					<label for="soft-bounce">Soft Bounce</label>
+				</li>
+				<li>
+					<input type="checkbox" value="abuse-complaint" id="abuse-complaint" />
+					<label for="abuse-complaint">Abuse Complaint</label>
+				</li>
+				<li>
+					<input type="checkbox" value="forward" id="forward" />
+					<label for="forward">Forward</label>
+				</li>
+			</ol>
+			<div class="clear"></div>
+		</fieldset>
+
+		<script id="tmpCheckboxGroup" type="text/template" class="template">
+
+		</script>
+
+	</div>
+
+</body>
+</html>

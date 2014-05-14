@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<title>Checkbox Group</title>
+
+	<link rel="stylesheet" href="assets/styles/styles.css" />
+
+	<script src="assets/scripts/vendor/modernizr.custom.min.js"></script>
+	<script src="assets/scripts/vendor/jquery.min.js"></script>
+	<script src="assets/scripts/vendor/mustache.js"></script>
+	<script src="assets/scripts/vendor/underscore.min.js"></script>
+	<script src="assets/scripts/vendor/backbone.min.js"></script>
+	<script src="assets/scripts/shims/classList.js"></script>
+	<script src="assets/scripts/classes/checkbox-group.js"></script>
+
+	<script>
+		var $el;
+		var checkboxGroup;
+		// $(document).on('CheckboxGroup:clicked', function(e, data) {
+		// 	console.log('CheckboxGroup', data);
+		// });
+		$(function() {
+			$el = $('#checkbox-group-form');
+			checkboxGroup = new CheckboxGroup($el);
+		});
+	</script>
+
+</head>
+<body>
+
+	<div id="content">
+
+		<h1>Checkbox Group</h1>
+
+		<fieldset id="checkbox-group-form" class="cb-rb-fields inline">
+			<h2 class="toggle">Event Types</h2>
+			<ol>
+				<li>
+					<input type="checkbox" value="open" id="open" />
+					<label for="open">Open</label>
+					<span class="cb-state">
+						<input type="radio" value="y" id="open-y" name="open" class="y" />
+						<label for="open-y">Y</label>
+						/
+						<input type="radio" value="n" id="open-n" name="open" class="n" />
+						<label for="open-n">N</label>
+					</span>
+				</li>
+				<li>
+					<input type="checkbox" value="click" id="click" />
+					<label for="click">Click</label>
+					<span class="cb-state">
+						<input type="radio" value="y" id="click-y" name="click" class="y" />
+						<label for="click-y">Y</label>
+						/
+						<input type="radio" value="n" id="click-n" name="click" class="n" />
+						<label for="click-n">N</label>
+					</span>
+				</li>
+				<li>
+					<input type="checkbox" value="opt-out" id="opt-out" />
+					<label for="opt-out">Opt Out</label>
+					<span class="cb-state">
+						<input type="radio" value="y" id="opt-out-y" name="opt-out" class="y" />
+						<label for="opt-out-y">Y</label>
+						/
+						<input type="radio" value="n" id="opt-out-n" name="opt-out" class="n" />
+						<label for="opt-out-n">N</label>
+					</span>
+				</li>
+				<li>
+					<input type="checkbox" value="hard-bounce" id="hard-bounce" />
+					<label for="hard-bounce">Hard Bounce</label>
+					<span class="cb-state">
+						<input type="radio" value="y" id="hard-bounce-y" name="hard-bounce" class="y" />
+						<label for="hard-bounce-y">Y</label>
+						/
+						<input type="radio" value="n" id="hard-bounce-n" name="hard-bounce" class="n" />
+						<label for="hard-bounce-n">N</label>
+					</span>
+				</li>
+				<li>
+					<input type="checkbox" value="soft-bounce" id="soft-bounce" />
+					<label for="soft-bounce">Soft Bounce</label>
+					<span class="cb-state">
+						<input type="radio" value="y" id="soft-bounce-y" name="soft-bounce" class="y" />
+						<label for="soft-bounce-y">Y</label>
+						/
+						<input type="radio" value="n" id="soft-bounce-n" name="soft-bounce" class="n" />
+						<label for="soft-bounce-n">N</label>
+					</span>
+				</li>
+				<li>
+					<input type="checkbox" value="abuse-complaint" id="abuse-complaint" />
+					<label for="abuse-complaint">Abuse Complaint</label>
+					<span class="cb-state">
+						<input type="radio" value="y" id="abuse-complaint-y" name="abuse-complaint" class="y" />
+						<label for="abuse-complaint-y">Y</label>
+						/
+						<input type="radio" value="n" id="abuse-complaint-n" name="abuse-complaint" class="n" />
+						<label for="abuse-complaint-n">N</label>
+					</span>
+				</li>
+				<li>
+					<input type="checkbox" value="forward" id="forward" />
+					<label for="forward">Forward</label>
+					<span class="cb-state">
+						<input type="radio" value="y" id="forward-y" name="forward" class="y" />
+						<label for="forward-y">Y</label>
+						/
+						<input type="radio" value="n" id="forward-n" name="forward" class="n" />
+						<label for="forward-n">N</label>
+					</span>
+				</li>
+			</ol>
+			<div class="clear"></div>
+		</fieldset>
+
+		<script id="tmpCheckboxGroup" type="text/template" class="template">
+
+		</script>
+
+	</div>
+
+</body>
+</html>
