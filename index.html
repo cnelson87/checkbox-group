@@ -9,12 +9,12 @@
 
 	<link rel="stylesheet" href="assets/styles/styles.css" />
 
+	<!--[if IE 9]><script src="_ui/js/shims/classList.js"></script><![endif]-->
 	<script src="assets/scripts/vendor/modernizr.custom.min.js"></script>
 	<script src="assets/scripts/vendor/jquery.min.js"></script>
+	<script src="assets/scripts/vendor/lodash.min.js"></script>
 	<script src="assets/scripts/vendor/mustache.js"></script>
-	<script src="assets/scripts/vendor/underscore.min.js"></script>
 	<script src="assets/scripts/vendor/backbone.min.js"></script>
-	<script src="assets/scripts/shims/classList.js"></script>
 	<script src="assets/scripts/classes/checkbox-group.js"></script>
 
 	<script>
@@ -40,7 +40,7 @@
 			<h2 class="toggle">Event Types</h2>
 			<ol>
 				<li>
-					<input type="checkbox" value="open" id="open" />
+					<input type="checkbox" value="" id="open" />
 					<label for="open">Open</label>
 					<span class="cb-state">
 						<input type="radio" value="y" id="open-y" name="open" class="y" />
@@ -51,7 +51,7 @@
 					</span>
 				</li>
 				<li>
-					<input type="checkbox" value="click" id="click" />
+					<input type="checkbox" value="" id="click" />
 					<label for="click">Click</label>
 					<span class="cb-state">
 						<input type="radio" value="y" id="click-y" name="click" class="y" />
@@ -62,7 +62,7 @@
 					</span>
 				</li>
 				<li>
-					<input type="checkbox" value="opt-out" id="opt-out" />
+					<input type="checkbox" value="" id="opt-out" />
 					<label for="opt-out">Opt Out</label>
 					<span class="cb-state">
 						<input type="radio" value="y" id="opt-out-y" name="opt-out" class="y" />
@@ -73,7 +73,7 @@
 					</span>
 				</li>
 				<li>
-					<input type="checkbox" value="hard-bounce" id="hard-bounce" />
+					<input type="checkbox" value="" id="hard-bounce" />
 					<label for="hard-bounce">Hard Bounce</label>
 					<span class="cb-state">
 						<input type="radio" value="y" id="hard-bounce-y" name="hard-bounce" class="y" />
@@ -84,7 +84,7 @@
 					</span>
 				</li>
 				<li>
-					<input type="checkbox" value="soft-bounce" id="soft-bounce" />
+					<input type="checkbox" value="" id="soft-bounce" />
 					<label for="soft-bounce">Soft Bounce</label>
 					<span class="cb-state">
 						<input type="radio" value="y" id="soft-bounce-y" name="soft-bounce" class="y" />
@@ -95,7 +95,7 @@
 					</span>
 				</li>
 				<li>
-					<input type="checkbox" value="abuse-complaint" id="abuse-complaint" />
+					<input type="checkbox" value="" id="abuse-complaint" />
 					<label for="abuse-complaint">Abuse Complaint</label>
 					<span class="cb-state">
 						<input type="radio" value="y" id="abuse-complaint-y" name="abuse-complaint" class="y" />
@@ -106,7 +106,7 @@
 					</span>
 				</li>
 				<li>
-					<input type="checkbox" value="forward" id="forward" />
+					<input type="checkbox" value="" id="forward" />
 					<label for="forward">Forward</label>
 					<span class="cb-state">
 						<input type="radio" value="y" id="forward-y" name="forward" class="y" />

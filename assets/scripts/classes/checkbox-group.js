@@ -57,11 +57,11 @@ CheckboxGroup.prototype = {
 **/
 
 	checkAll: function() {
-		this.$elCheckboxes.prop('checked', true);
+		this.$elCheckboxes.prop('checked', true).val('true');
 	},
 
 	uncheckAll: function() {
-		this.$elCheckboxes.prop('checked', false);
+		this.$elCheckboxes.prop('checked', false).val('');
 	},
 
 	addToggleClass: function() {
