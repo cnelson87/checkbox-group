@@ -8,11 +8,38 @@
 	<title>Checkbox Group</title>
 
 	<link rel="stylesheet" href="assets/styles/styles.css" />
+	<style>
+		h2.toggle.checked:after {content: " ✓";}
+		span.cb-state {
+			display: inline-block;
+			padding: 0 5px;
+			background: #efefef;
+		}
+			span.cb-state label {
+				display: inline-block;
+				opacity: 0.5;
+				width: 16px;
+				text-align: center;
+			}
+			span.cb-state input[type=radio].y + label {
+				color: blue;
+			}
+			span.cb-state input[type=radio].n + label {
+				color: red;
+			}
+			span.cb-state input[type=radio]:checked + label {
+				opacity: 1.0;
+				font-weight: bold;
+			}
+			span.cb-state input {
+				display: none;
+			}
+	</style>
 
 	<!--[if IE 9]><script src="_ui/js/shims/classList.js"></script><![endif]-->
 	<script src="assets/scripts/vendor/modernizr.custom.min.js"></script>
 	<script src="assets/scripts/vendor/jquery.min.js"></script>
-	<script src="assets/scripts/vendor/lodash.min.js"></script>
+	<script src="assets/scripts/vendor/underscore.min.js"></script>
 	<script src="assets/scripts/vendor/mustache.js"></script>
 	<script src="assets/scripts/vendor/backbone.min.js"></script>
 	<script src="assets/scripts/views/checkbox-group.js"></script>
