@@ -1,5 +1,5 @@
 
-var CheckboxGroup = Backbone.View.extend({
+var CheckboxGroupView = Backbone.View.extend({
 
 	tagName: 'div',
 	className: 'custom-select-container',
